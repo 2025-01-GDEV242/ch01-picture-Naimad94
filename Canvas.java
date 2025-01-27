@@ -27,7 +27,8 @@ public class Canvas
      */
     public static Canvas getCanvas()
     {
-        if(canvasSingleton == null) {
+        if(canvasSingleton == null) 
+        {
             canvasSingleton = new Canvas("BlueJ Picture Demo", 500, 300, 
                                          Color.white);
         }
@@ -75,7 +76,8 @@ public class Canvas
      */
     public void setVisible(boolean visible)
     {
-        if(graphic == null) {
+        if(graphic == null) 
+        {
             // first time: instantiate the offscreen image and fill it with
             // the background color
             Dimension size = canvas.getSize();
@@ -122,28 +124,36 @@ public class Canvas
      */
     public void setForegroundColor(String colorString)
     {
-        if(colorString.equals("red")) {
+        if(colorString.equals("red")) 
+        {
             graphic.setColor(new Color(235, 25, 25));
         }
-        else if(colorString.equals("black")) {
+        else if(colorString.equals("black")) 
+        {
             graphic.setColor(Color.black);
         }
-        else if(colorString.equals("blue")) {
+        else if(colorString.equals("blue")) 
+        {
             graphic.setColor(new Color(30, 75, 220));
         }
-        else if(colorString.equals("yellow")) {
+        else if(colorString.equals("yellow")) 
+        {
             graphic.setColor(new Color(255, 230, 0));
         }
-        else if(colorString.equals("green")) {
+        else if(colorString.equals("green")) 
+        {
             graphic.setColor(new Color(80, 160, 60));
         }
-        else if(colorString.equals("magenta")) {
+        else if(colorString.equals("magenta")) 
+        {
             graphic.setColor(Color.magenta);
         }
-        else if(colorString.equals("white")) {
+        else if(colorString.equals("white")) 
+        {
             graphic.setColor(Color.white);
         }
-        else {
+        else 
+        {
             graphic.setColor(Color.black);
         }
     }
@@ -172,7 +182,8 @@ public class Canvas
     private void redraw()
     {
         erase();
-        for(Object shape : objects) {
+        for(Object shape : objects) 
+        {
             shapes.get(shape).draw(graphic);
         }
         canvas.repaint();

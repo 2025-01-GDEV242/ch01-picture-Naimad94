@@ -170,7 +170,8 @@ public class Circle
      */
     private void draw()
     {
-        if(isVisible) {
+        if(isVisible) 
+        {
             Canvas canvas = Canvas.getCanvas();
             canvas.draw(this, color, new Ellipse2D.Double(xPosition, yPosition, 
                                                           diameter, diameter));
@@ -183,7 +184,8 @@ public class Circle
      */
     private void erase()
     {
-        if(isVisible) {
+        if(isVisible) 
+        {
             Canvas canvas = Canvas.getCanvas();
             canvas.erase(this);
         }
