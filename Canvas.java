@@ -8,10 +8,9 @@ import java.util.*;
  * This is a modification of the general purpose Canvas, specially made for
  * the BlueJ "shapes" example. 
  *
- * @author: Bruce Quig
- * @author: Michael Kšlling (mik)
+ * @author  Damian Nunez
+ * @version 2025.02.02
  *
- * @version 2016.02.29
  */
 public class Canvas
 {
@@ -120,13 +119,18 @@ public class Canvas
 
     /**
      * Set the foreground color of the Canvas.
-     * @param  newColor   the new color for the foreground of the Canvas 
+     * For this i had to look up the RGB value.
+     * @param  newColor the new color for the foreground of the Canvas 
      */
     public void setForegroundColor(String colorString)
     {
         if(colorString.equals("red")) 
         {
             graphic.setColor(new Color(235, 25, 25));
+        }
+        else if(colorString.equals("dark red")) 
+        {
+            graphic.setColor(new Color(153,0,0));
         }
         else if(colorString.equals("black")) 
         {
@@ -136,13 +140,47 @@ public class Canvas
         {
             graphic.setColor(new Color(30, 75, 220));
         }
+        
+        else if (colorString.equals("dark blue"))
+        {
+            graphic.setColor(new Color(0,0,153));
+        }
+        
+        else if (colorString.equals("sky blue"))
+        {
+            graphic.setColor(new Color(51,153,255));
+        }
+        else if (colorString.equals("dark blue"))
+        {
+            graphic.setColor(new Color(0,0,153));
+        }
         else if(colorString.equals("yellow")) 
         {
             graphic.setColor(new Color(255, 230, 0));
         }
+        
+        else if (colorString.equals("light yellow"))
+        {
+            graphic.setColor(new Color(255,255,153));
+        }
+        
+        else if (colorString.equals("orange"))
+        {
+            graphic.setColor(new Color(255,204,51));
+        }
+        
+        else if (colorString.equals("light orange"))
+        {
+            graphic.setColor(new Color(255,153,0));
+        }
         else if(colorString.equals("green")) 
         {
             graphic.setColor(new Color(80, 160, 60));
+        }
+        
+        else if(colorString.equals("light green")) 
+        {
+            graphic.setColor(new Color(0, 255, 51));
         }
         else if(colorString.equals("magenta")) 
         {
@@ -151,6 +189,18 @@ public class Canvas
         else if(colorString.equals("white")) 
         {
             graphic.setColor(Color.white);
+        }
+        else if(colorString.equals("grey")) 
+        {
+            graphic.setColor(new Color(153, 153, 153));
+        }
+        else if(colorString.equals("light grey")) 
+        {
+            graphic.setColor(new Color(204, 204, 204));
+        }
+        else if(colorString.equals("brown"))
+        {
+            graphic.setColor(new Color(102, 51, 0));
         }
         else 
         {
