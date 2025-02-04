@@ -113,6 +113,9 @@ public class Picture
      */
     public void setColor()
     {
+        sky.changeColor("blue");
+        grass.changeColor("green");
+        person.changeColor("black");
         wall.changeColor("red");
         door.changeColor("black");
         roof.changeColor("green");
