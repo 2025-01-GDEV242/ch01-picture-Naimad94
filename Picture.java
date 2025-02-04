@@ -7,7 +7,7 @@
  * This class was written as an early example for teaching Java with BlueJ.
  * 
  * @author  Damian Nunez
- * @version 2025.02.02
+ * @version 2025.03.02
  */
 public class Picture
 {
